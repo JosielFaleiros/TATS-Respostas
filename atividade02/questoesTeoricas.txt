@@ -1,0 +1,33 @@
+Atividade 02 - Revisão inicial
+
+Parte 1
+
+Individualmente, crie um repositório chamado TATS-Respostas no GitHub. Neste repositório, crie uma pasta chamada atividade02. Coloque as respostas para as perguntas a seguir em um arquivo chamado "questoesTeoricas.txt". Essa parte pode ser realizada em equipes de até 3 pessoas; identifique no final do arquivo as pessoas que participaram desta equipe.
+
+- O que é o teste de software? Qual a melhor definição?
+Teste é uma garantia de que as funções funcionem de forma estruturada, garantindo a não existência de bugs.
+
+
+- O que é teste de unidade, integração e sistema?
+Teste de unidade está voltado a testar métodos e funções, pequenas caixas.
+Integração está voltado a comunicação entre as unidades do software. (na prática, quando você depende de outros sistemas externos).
+Sistema: teste da perspectiva do usuário, via interface gráfica.
+
+- O que é um caso de teste? Dê exemplos.
+Caso de teste é uma entrada com saídas esperadas em condições de execução.
+
+- Qual a diferença entre um teste manual e um teste automatizado?
+Teste manual é um teste performado por uma pessoa, enquanto o automatizado é performado por uma máquina.
+
+- Explique a diferença entre o teste caixa-branca e o teste caixa-preta.
+Caixa branca (estrutural) você tem acesso ao código,
+Caixa preta (funcional) você não tem acesso ao código.
+
+- O que é um teste de regressão?
+Quando já testou antes e deseja testar novamente, pelo software ter sido alterado.
+
+- O que é um critério de teste? Cite exemplos.
+Critérios são formas de testar o software, sendo no caixa preta de uma forma e no caixa branca de outra.
+
+Josiel Faleiros Alves
+Rafael Nascimento dos Santos
