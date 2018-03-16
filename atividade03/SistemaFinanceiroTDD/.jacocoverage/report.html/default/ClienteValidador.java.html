@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ClienteValidador.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;SistemaFinanceiroTDD&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">ClienteValidador.java</span></div><h1>ClienteValidador.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author JosielFaleiros
+ */
+<span class="nc" id="L11">class ClienteValidador {</span>
+
+    static void Validar(Cliente c) throws IllegalArgumentException {
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (c.getNome().trim().equals(&quot;&quot;)) {</span>
+<span class="fc" id="L15">            throw new IllegalArgumentException(&quot;Nome em branco&quot;);</span>
+        }
+
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (c.getSalario() &lt; 0) {</span>
+<span class="fc" id="L19">            throw new IllegalArgumentException(&quot;Salario negativo&quot;);</span>
+        }
+
+<span class="pc bpc" id="L22" title="1 of 4 branches missed.">        if (c.getIdade() &lt; 18 || c.getIdade() &gt; 70) {</span>
+<span class="fc" id="L23">            throw new IllegalArgumentException(&quot;Idade incorreta&quot;);</span>
+        }
+
+<span class="pc bpc" id="L26" title="1 of 4 branches missed.">        if (c.getEmprestimo() &lt; 100 || c.getEmprestimo() &gt; 100000) {</span>
+<span class="fc" id="L27">            throw new IllegalArgumentException(&quot;Valor do emprestimo invalido&quot;);</span>
+        }
+<span class="fc" id="L29">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>
