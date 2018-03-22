@@ -24,36 +24,38 @@ public class CalculadoraSalarioTDD {
                 desconto = descontoTestador(funcionario);
                 break;
             case "GERENTE":
-                if (funcionario.getSalario() >= 5000.0) {
-                    desconto = 30;
-                }
+                desconto = descontoGerente(funcionario);
                 break;
         }
         return desconto;
     }
 
+    private int descontoGerente(Funcionario funcionario) {
+        if (funcionario.getSalario() >= 5000.0) {
+            return 30;
+        }
+        return 0;
+    }
+
     private int descontoTestador(Funcionario funcionario) {
         if (funcionario.getSalario() >= 2000.00) {
             return 25;
-        } else {
-            return 15;
         }
+        return 15;
     }
 
     private int descontoDBA(Funcionario funcionario) {
         if (funcionario.getSalario() >= 2000.0) {
             return 25;
-        } else {
-            return 15;
         }
+        return 15;
     }
 
     private int descontoDesenvolvedor(Funcionario funcionario) {
         if (funcionario.getSalario() >= 3000.0) {
             return 20;
-        } else {
-            return 10;
         }
+        return 10;
     }
 
 }
