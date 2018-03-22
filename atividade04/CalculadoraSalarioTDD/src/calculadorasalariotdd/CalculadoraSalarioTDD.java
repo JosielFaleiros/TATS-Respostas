@@ -12,7 +12,15 @@ package calculadorasalariotdd;
 public class CalculadoraSalarioTDD {
 
     public int calcDesconto(Funcionario funcionario) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int desconto = 0;
+        switch (funcionario.getPapel()) {
+            case "DESENVOLVEDOR":
+                if (funcionario.getSalario() >= 3000.0) {
+                    desconto = 20;
+                }
+                break;
+        }
+        return desconto;
     }
 
 }

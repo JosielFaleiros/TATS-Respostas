@@ -11,8 +11,28 @@ package calculadorasalariotdd;
  * @author JosielFaleiros
  */
 public class Funcionario {
-    
+    String papel;
+    double salario;
     public Funcionario(String papel, double salario) {
+        this.papel = papel;
+        this.salario = salario;
     }
+
+    public String getPapel() {
+        return papel;
+    }
+
+    public void setPapel(String papel) {
+        this.papel = papel;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
     
 }
