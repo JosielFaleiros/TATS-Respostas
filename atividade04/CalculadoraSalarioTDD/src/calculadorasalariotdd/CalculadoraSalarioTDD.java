@@ -59,7 +59,7 @@ public class CalculadoraSalarioTDD {
     }
 
     public double calcSalario(Funcionario funcionario) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return funcionario.salario - funcionario.salario * this.calcDesconto(funcionario) / 100;
     }
 
 }
