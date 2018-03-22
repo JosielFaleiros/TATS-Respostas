@@ -23,6 +23,11 @@ public class CalculadoraSalarioTDD {
             case "TESTADOR":
                 desconto = descontoTestador(funcionario);
                 break;
+            case "GERENTE":
+                if (funcionario.getSalario() >= 5000.0) {
+                    desconto = 30;
+                }
+                break;
         }
         return desconto;
     }
