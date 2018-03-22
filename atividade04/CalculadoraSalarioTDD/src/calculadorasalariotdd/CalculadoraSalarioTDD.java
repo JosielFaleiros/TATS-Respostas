@@ -17,6 +17,8 @@ public class CalculadoraSalarioTDD {
             case "DESENVOLVEDOR":
                 if (funcionario.getSalario() >= 3000.0) {
                     desconto = 20;
+                } else {
+                    desconto = 10;
                 }
                 break;
         }
