@@ -59,4 +59,9 @@ public class CalculadoraSalarioTest {
         assertEquals(15, calculadora.calcDesconto(new Funcionario("DBA", 1000.00)));
     }
     
+    @Test
+    public void salarioMaiorIgual2000Testador() {
+        assertEquals(25, calculadora.calcDesconto(new Funcionario("TESTADOR", 2000.00)));
+    }
+
 }
