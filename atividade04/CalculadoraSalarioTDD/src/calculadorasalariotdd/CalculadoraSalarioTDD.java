@@ -20,6 +20,11 @@ public class CalculadoraSalarioTDD {
             case "DBA":
                 desconto = descontoDBA(funcionario);
                 break;
+            case "TESTADOR":
+                if (funcionario.getSalario() >= 2000.00) {
+                    desconto = 25;
+                }
+                break;
         }
         return desconto;
     }
