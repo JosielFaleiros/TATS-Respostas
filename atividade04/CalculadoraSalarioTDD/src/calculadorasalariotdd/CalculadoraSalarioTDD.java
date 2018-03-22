@@ -15,19 +15,28 @@ public class CalculadoraSalarioTDD {
         int desconto = 0;
         switch (funcionario.getPapel()) {
             case "DESENVOLVEDOR":
-                if (funcionario.getSalario() >= 3000.0) {
-                    desconto = 20;
-                } else {
-                    desconto = 10;
-                }
+                desconto = descontoDesenvolvedor(funcionario);
                 break;
             case "DBA":
-                if (funcionario.getSalario() >= 2000.0) {
-                    desconto = 25;
-                }
+                desconto = descontoDBA(funcionario);
                 break;
         }
         return desconto;
+    }
+
+    private int descontoDBA(Funcionario funcionario) {
+        if (funcionario.getSalario() >= 2000.0) {
+            return 25;
+        }
+        return 0;
+    }
+
+    private int descontoDesenvolvedor(Funcionario funcionario) {
+        if (funcionario.getSalario() >= 3000.0) {
+            return 20;
+        } else {
+            return 10;
+        }
     }
 
 }
