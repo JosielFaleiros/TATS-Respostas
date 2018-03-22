@@ -83,5 +83,10 @@ public class CalculadoraSalarioTest {
     public void salarioDesenvolvedor() {
         assertEquals(4000.0, calculadora.calcSalario(new Funcionario("DESENVOLVEDOR", 5000.00)), 0.0000001);
     }
+    
+    @Test
+    public void salarioGerente() {
+        assertEquals(2000.0, calculadora.calcSalario(new Funcionario("GERENTE", 2500.00)), 0.0000001);
+    }
 
 }
