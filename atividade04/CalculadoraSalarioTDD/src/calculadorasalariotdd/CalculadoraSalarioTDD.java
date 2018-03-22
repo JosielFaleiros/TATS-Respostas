@@ -30,8 +30,9 @@ public class CalculadoraSalarioTDD {
     private int descontoTestador(Funcionario funcionario) {
         if (funcionario.getSalario() >= 2000.00) {
             return 25;
+        } else {
+            return 15;
         }
-        return 0;
     }
 
     private int descontoDBA(Funcionario funcionario) {
