@@ -11,4 +11,8 @@ package calculadorasalariotdd;
  */
 public class CalculadoraSalarioTDD {
 
+    public int calcDesconto(Funcionario funcionario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
