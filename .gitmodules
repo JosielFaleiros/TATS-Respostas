@@ -1,3 +1,6 @@
 [submodule "atividade06"]
 	path = atividade06
 	url = https://github.com/JosielFaleiros/ProjetoTDD.git
+[submodule "atividade16"]
+	path = atividade16
+	url = https://github.com/JosielFaleiros/teste-pageobjects-redmine.git
